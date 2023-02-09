@@ -1,0 +1,100 @@
+@font-face {
+  font-family: Oswald;
+  src: url(Oswald-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(OpenSans-VariableFont_wdthwght.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Regular.ttf), url(Roboto-Thin.ttf);
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.bodyy {
+  color: #111111;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.section-1 {
+  background-image: url(doctor_bg.png);
+  background-position: 50% 50%;
+}
+
+.section-1__container {
+  min-height: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.section-1__container .text {
+  margin-right: auto;
+
+  inline-size: 28em;
+  overflow-wrap: break-word;
+}
+
+.section-1__container .text .main_header {
+  color: #3e4a59;
+  font-family: Oswald, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  padding-top: auto;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.font-oswald {
+  font-family: Oswald, sans-serif !important;
+}
+
+.section-1__button {
+  margin-top: 20;
+  margin-right: 0;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  background-image: none;
+  font-weight: 600;
+  margin-bottom: 45px;
+  color: #ffffff !important;
+  background-color: #4c637f !important;
+  border-width: 0;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 0;
+  outline-width: 0;
+  white-space: nowrap;
+  border: 0 none transparent;
+  outline-width: 0;
+}
+
+.directlink {
+  text-decoration: none;
+  user-select: none;
+  color: #73a3de;
+}
