@@ -1,0 +1,45 @@
+.s-5_text__container {
+  display: flex;
+  flex-flow: column;
+}
+.s-5_text__container h2 {
+  font-family: Oswald, sans-serif !important;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.s-5-planet {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-top: 10px;
+  inline-size: 30em;
+  overflow-wrap: break-word;
+}
+
+.s-5_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-5_row {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-shrink: 1;
+}
+
+.s-5 {
+  margin: 0 !important;
+}
+.jopa {
+  margin: 60px;
+}
