@@ -70,6 +70,7 @@
   font-family: Roboto, sans-serif;
   text-align: left;
   margin-bottom: 0;
+  word-wrap: break-word;
 }
 
 .s-3__col__text p {
