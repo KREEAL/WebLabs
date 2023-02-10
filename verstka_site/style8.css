@@ -1,0 +1,92 @@
+.s-8 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-8__header h2 {
+  font-family: Oswald, sans-serif !important;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.s-8__header p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-top: 10px;
+  inline-size: 30em;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.doctor_carousel {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  padding-bottom: 50px;
+}
+
+.doctor_card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#firstdoctor {
+  background-color: #e0e5eb;
+}
+#seconddoctor {
+  background-color: #ccd3db;
+}
+#thirddoctor {
+  background-color: #858e99;
+  color: white;
+}
+
+.doctor_card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+}
+
+.doctor_card h6 {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-family: Roboto, sans-serif;
+  margin: 20px;
+  margin-bottom: 7px;
+  padding: 0;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.doctor_card p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-family: "Open Sans", sans-serif;
+  margin: 20px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  padding: 0;
+  padding-bottom: 30px;
+  text-align: end;
+
+  align-self: flex-start;
+}
