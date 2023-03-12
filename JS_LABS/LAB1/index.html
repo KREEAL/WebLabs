@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЛАБЫ ПО JS</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="font-size: 20px; font-weight: 700">
+      ЦВЕТКОВ КИРИЛЛ. ВАРИАНТ 13
+    </h1>
+    <div class="tab">
+      <button class="tablinks" onclick="openTask(event, 'Task1')">
+        Task 1
+      </button>
+      <button class="tablinks" onclick="openTask(event, 'Task2')">
+        Task 2
+      </button>
+      <button class="tablinks" onclick="openTask(event, 'Task3')">
+        Task 3
+      </button>
+      <button class="tablinks" onclick="openTask(event, 'Task4')">
+        Task 4
+      </button>
+      <button class="tablinks" onclick="openTask(event, 'Task5')">
+        Task 5
+      </button>
+      <button class="tablinks" onclick="openTask(event, 'Task6')">
+        Task 6
+      </button>
+      <button class="tablinks" onclick="openTask(event, 'Task7')">
+        Task 7
+      </button>
+      <button class="tablinks" onclick="openTask(event, 'Task8')">
+        Task 8
+      </button>
+      <button class="tablinks" onclick="openTask(event, 'Task9')">
+        Task 9
+      </button>
+      <button class="tablinks" onclick="openTask(event, 'Task10')">
+        Task 10
+      </button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Task1" class="tabcontent">
+      <h3>Задача 1</h3>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+        "
+      >
+        <p style="font-size: 20px" id="dt"></p>
+
+        <script>
+          setInterval(function () {
+            showTime("dt");
+          }, 1000);
+        </script>
+
+        <img src="task1.png" alt="ЗАДАНИЕ" />
+      </div>
+      <br />
+    </div>
+
+    <div id="Task2" class="tabcontent">
+      <h3>Задача 2</h3>
+    </div>
+
+    <div id="Task3" class="tabcontent">
+      <h3>Задача 3</h3>
+      <p>Получить список таблиц в DOM-дереве и вывести их количество</p>
+      <h3>количество таблиц: <span id="task3h3">0</span></h3>
+      <script>
+        setTimeout(function () {
+          domTreeTables = document.getElementsByTagName("TABLE");
+          task3h3 = document.getElementById("task3h3");
+          task3h3.textContent = domTreeTables.length;
+          console.log(domTreeTables.length);
+        }, 1000);
+      </script>
+    </div>
+
+    <div id="Task4" class="tabcontent">
+      <h3>Задача 4</h3>
+      <script>
+        setInterval(function () {
+          task4_openText();
+        }, 80);
+      </script>
+      <p>
+        Через указанный промежуток времени 80мс отображать текст в одном из
+        блоков (номер блока выбирается последовательно)
+      </p>
+      <div class="four_blocks">
+        <div class="four_block">
+          <p class="four_block_text" id="fbt_1">ТЕКСТ ПОЯВИЛСЯ ЗДЕСЬ</p>
+        </div>
+        <div class="four_block">
+          <p class="four_block_text" id="fbt_2">ТЕКСТ ПОЯВИЛСЯ ЗДЕСЬ</p>
+        </div>
+        <div class="four_block">
+          <p class="four_block_text" id="fbt_3">ТЕКСТ ПОЯВИЛСЯ ЗДЕСЬ</p>
+        </div>
+        <div class="four_block">
+          <p class="four_block_text" id="fbt_4">ТЕКСТ ПОЯВИЛСЯ ЗДЕСЬ</p>
+        </div>
+        <div class="four_block">
+          <p class="four_block_text" id="fbt_5">ТЕКСТ ПОЯВИЛСЯ ЗДЕСЬ</p>
+        </div>
+        <div class="four_block">
+          <p class="four_block_text" id="fbt_6">ТЕКСТ ПОЯВИЛСЯ ЗДЕСЬ</p>
+        </div>
+      </div>
+    </div>
+    <div id="Task5" class="tabcontent">
+      <h3>Задача 5</h3>
+      <p>Ячейки &lt;td&gt; в строки таблицы</p>
+      <p>Удаление сверху от текущего</p>
+      <table style="width: 80%; margin: 30px auto; border-collapse: collapse">
+        <tr style="background-color: #1c87c9; color: #fff">
+          <th>Месяц</th>
+          <th>Дата</th>
+          <th>Параметр 1</th>
+          <th>Параметр 2</th>
+          <th>Параметр 3</th>
+          <th>Параметр 4</th>
+        </tr>
+        <tr style="background-color: lightgrey">
+          <td>Март</td>
+          <td>10.09.2018</td>
+          <td>Март</td>
+          <td><img src="circle_20.png" alt="o" /></td>
+          <td>Март</td>
+          <td>10.09.2018</td>
+        </tr>
+        <tr style="background-color: gray">
+          <td>Июнь</td>
+          <td>18.07.2018</td>
+          <td>Июнь</td>
+          <td>18.07.2018</td>
+          <td>Июнь</td>
+          <td>18.07.2018</td>
+        </tr>
+        <tr style="background-color: lightgrey">
+          <td>Март</td>
+          <td>10.09.2018</td>
+          <td>Март</td>
+          <td>10.09.2018</td>
+          <td>Март</td>
+          <td><img src="circle_20.png" alt="o" /></td>
+        </tr>
+        <tr style="background-color: gray">
+          <td>Июнь</td>
+          <td>18.07.2018</td>
+          <td><img src="circle_20.png" alt="o" /></td>
+          <td>18.07.2018</td>
+          <td>Июнь</td>
+          <td>18.07.2018</td>
+        </tr>
+        <tr style="background-color: lightgrey">
+          <td>Март</td>
+          <td>10.09.2018</td>
+          <td>Март</td>
+          <td>10.09.2018</td>
+          <td>Март</td>
+          <td>10.09.2018</td>
+        </tr>
+        <tr style="background-color: gray">
+          <td><img src="circle_20.png" alt="o" /></td>
+          <td>18.07.2018</td>
+          <td>Июнь</td>
+          <td>18.07.2018</td>
+          <td>Июнь</td>
+          <td>18.07.2018</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Task6" class="tabcontent">
+      <h3>Задача 6</h3>
+      <p>
+        Нажатие на клавишу клавиатуры создает поле, позволяющее вводить только
+        буквы. НАЖМИТЕ КЛАВИШУ
+        <span style="font-size: 40px; color: green">Z</span>
+      </p>
+      <div class="task6container">
+        <input type="text" class="task6input" />
+      </div>
+      <script>
+        task6container = document.getElementsByClassName("task6container");
+        task6block = document.getElementById("Task6");
+        let gachimuchi;
+        document.addEventListener("keydown", function (event) {
+          if (event.code == "KeyZ") {
+            if (task6block.style.display == "block") {
+              //console.log("Код создания нового input класса task6input");
+              const newInput = document.createElement("input");
+              newInput.className = "task6input";
+              document
+                .getElementsByClassName("task6container")[0]
+                .appendChild(newInput);
+            }
+          }
+          if (task6block.style.display == "block") {
+            gachimuchi = setInterval(function () {
+              allInputs = document.getElementsByClassName("task6input");
+              for (let i = 0; i < allInputs.length; i++) {
+                allInputs[i].value = stayLettersTrue(allInputs[i]);
+              }
+            }, 50);
+          } else {
+            clearInterval(gachimuchi);
+          }
+        });
+        //}
+      </script>
+    </div>
+
+    <div id="Task7" class="tabcontent">
+      <h3>Задача 7</h3>
+      <p>Текст задачи 7</p>
+      <div class="menu dulces">
+        <h3 class="title">ВКУСНЯШКИВКУСНЯШКИ</h3>
+        <ul id="list7">
+          <li>Печенка</li>
+          <li>Мёд</li>
+          <li>Конфетка</li>
+          <li>Леденцы</li>
+        </ul>
+        <h3 id="end7">ВКУСНЯШКИ КОНЧИЛИСЬ</h3>
+      </div>
+      <script>
+        let endtext = document.getElementById("end7");
+        endtext.style.visibility = "hidden";
+
+        let menuElement = document.querySelector(".dulces");
+        let titleElement = menuElement.querySelector(".title");
+
+        titleElement.onclick = function () {
+          menuElement.classList.toggle("hidden");
+        };
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const itemsList = document.getElementById("list7");
+
+          itemsList.addEventListener("click", function (event) {
+            let target = event.target;
+            if (target.tagName === "LI") {
+              target.classList.add("fading");
+              setTimeout(() => {
+                target.remove();
+              }, 450);
+              console.log(itemsList.childElementCount);
+            }
+            if (itemsList.childElementCount == 1) {
+              endtext.style.visibility = "visible";
+              endtext.classList.add("fading_out");
+            }
+          });
+        });
+      </script>
+    </div>
+
+    <div id="Task8" class="tabcontent">
+      <h3>Задача 8</h3>
+      <p>
+        Картинка исчезает при наведение и появляется обратно, когда мышка не
+        наведена
+      </p>
+      <div class="task8container">
+        <h3 class="task8text">kvvuctf{y0ur_n1c3_fl4g}</h3>
+        <img class="task8img" id="task8burger" src="task8.jpg" alt="burger" />
+        <script>
+          burger = document.getElementById("task8burger");
+          hovereddd = false;
+          let gachi, muchi;
+
+          let mult = -1;
+          const isHover = (e) => e.parentElement.querySelector(":hover") === e;
+
+          const myDiv = document.getElementById("task8burger");
+          document.addEventListener("mousemove", function checkHover() {
+            const hovered = isHover(myDiv);
+            if (hovered !== checkHover.hovered) {
+              console.log(hovered ? "hovered" : "not hovered");
+              if (hovered) {
+                clearInterval(muchi);
+                mult = +1;
+                gachi = setInterval(function () {
+                  makehover(myDiv, myDiv.style.opacity, mult);
+                }, 50);
+              } else {
+                mult = -1;
+                clearInterval(gachi);
+                muchi = setInterval(function () {
+                  makehover(myDiv, myDiv.style.opacity, mult);
+                }, 50);
+              }
+              // setInterval(function () {
+              //   makehover(myDiv, myDiv.style.opacity, mult);
+              // }, 100);
+              checkHover.hovered = hovered;
+              hovereddd = hovered;
+            }
+          });
+
+          if (hovereddd) {
+            console.log("pososi");
+          }
+        </script>
+      </div>
+    </div>
+
+    <div id="Task9" class="tabcontent">
+      <h3>Задача 9</h3>
+      <p>Текст задачи 9</p>
+    </div>
+
+    <div id="Task10" class="tabcontent">
+      <h3>Задача 10</h3>
+      <p>Текст задачи 10</p>
+    </div>
+  </body>
+</html>
